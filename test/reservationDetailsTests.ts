@@ -5,12 +5,14 @@ const expect = mochaPlugin.chai.expect;
 let getRequestWrapped = mochaPlugin.getWrapper('getReservationDetails', '/.webpack/service/handler.js', 'getReservationDetails');
 let addRequestWrapped = mochaPlugin.getWrapper('addReservationDetails', '/.webpack/service/handler.js', 'addReservationDetails');
 
+// These tests are not complete but with these templates implemented, every scenario can be tested.
+
 describe('getReservationDetails', () => {
   before((done) => {
     done();
   });
 
-  it('implement tests here', async () => {
+  it('Testing GET API', async () => {
     const response = await getRequestWrapped.run({
       method: 'GET',
       pathParameters: {
@@ -27,7 +29,7 @@ describe('addReservationDetails', () => {
     done();
   });
 
-  it('adding reservation details', async () => {
+  it('Testing POST API', async () => {
     const response = await addRequestWrapped.run({
       method: 'POST',
       body: JSON.stringify({
@@ -51,7 +53,7 @@ describe('updateReservationDetails', () => {
     done();
   });
 
-  it('updating reservation details', async () => {
+  it('Testing POST API', async () => {
     const response = await addRequestWrapped.run({
       method: 'PUT',
       body: JSON.stringify({

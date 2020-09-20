@@ -1,5 +1,4 @@
 import { APIGatewayEvent, Context, Handler } from "aws-lambda";
-
 import * as dbHandler from "./db-actions";
 import { ReservationDetails } from "./models/reservationDetails";
 
