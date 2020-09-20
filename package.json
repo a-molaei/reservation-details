@@ -1,0 +1,35 @@
+{
+  "name": "cosi-task",
+  "version": "1.0.0",
+  "author": "Amir Molaei Rad",
+  "description": "Code task - Serverless application with AWS Lambda and DynamoDB",
+  "main": "handler.js",
+  "scripts": {
+    "start": "serverless offline start --port 4000",
+    "test": "serverless invoke test"
+  },
+  "dependencies": {
+    "aws-lambda": "^0.1.2",
+    "node": "^12.3.1",
+    "serverless": "^1.83.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.1",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^8.0.57",
+    "@types/uuid": "^3.4.4",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.1.3",
+    "serverless-mocha-plugin": "^1.12.0",
+    "serverless-offline": "^4.10.6",
+    "serverless-plugin-typescript": "^1.1.9",
+    "serverless-webpack": "^5.1.1",
+    "source-map-support": "^0.5.6",
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.5.0"
+  },
+  "license": "MIT"
+}

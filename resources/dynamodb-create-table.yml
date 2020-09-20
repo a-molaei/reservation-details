@@ -1,0 +1,15 @@
+Resources:
+  ReservationDetails:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: reservation-details
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      # Set the capacity
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
