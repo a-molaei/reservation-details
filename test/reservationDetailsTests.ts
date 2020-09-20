@@ -53,7 +53,7 @@ describe('updateReservationDetails', () => {
     done();
   });
 
-  it('Testing POST API', async () => {
+  it('Testing PUT API', async () => {
     const response = await addRequestWrapped.run({
       method: 'PUT',
       body: JSON.stringify({
